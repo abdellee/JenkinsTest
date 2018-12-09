@@ -17,6 +17,8 @@ namespace JenkinsTest
             x = 1000;
             x = 1000;
             x = 1000;
+            x = 1000;
+            // code changed
         }
     }
 }
