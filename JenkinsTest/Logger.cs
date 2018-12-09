@@ -15,6 +15,7 @@ namespace JenkinsTest
             x = x + 1;
             x = 10;
             x = 1000;
+            x = 1000;
         }
     }
 }
