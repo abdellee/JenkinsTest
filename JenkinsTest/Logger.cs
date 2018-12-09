@@ -13,6 +13,7 @@ namespace JenkinsTest
             // do something
             int x = 0;
             x = x + 1;
+            x = 10;
         }
     }
 }
