@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace JenkinsTest
 {
-    public class Class1
+    public class Logger
     {
+        public static void log(string msg)
+        {
+            // do something
+        }
     }
 }
