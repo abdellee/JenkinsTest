@@ -11,6 +11,7 @@ namespace JenkinsTest
         public static void log(string msg)
         {
             // do something
+            int x = 0;
         }
     }
 }
