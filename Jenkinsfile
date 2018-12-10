@@ -11,7 +11,8 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                bat "\"${tool 'MSBuild'}\" Jenkinstest.sln /p:Configuration=Release /p:Platform=\"Any CPU\" /p:ProductVersion=1.0.0.${env.BUILD_NUMBER}"
+                def msbuild = tool name: 'MSBuild', type: 'hudson.plugins.msbuild.MsBuildInstallation'
+                bat "${msbuild} Jenkinstest.sln"
             }
         }
         stage('Test') {
